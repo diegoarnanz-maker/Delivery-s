@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="shortcut icon" href="build/img/logo.png" type="image/x-icon">
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    
+    <header class="header contenedor">
+        <div class="header__logo" onclick="navigateTo('index.html')">
+            <p class="header__logo--texto">Delivery's</p>
+            <img src="build/img/logo.png" alt="logo delivery">
+        </div>
+
+        <nav class="navegacion">
+            <a href="inicio.html" class="navegacion__link">Iniciar Sesion</a>
+            <a href="crearcuenta.html" class="navegacion__link">Crear Cuenta</a>
+            <a href="registrar.html" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+
+    <main class="registrar contenedor">
+        <div class="registrar__grid">
+            <div class="registrar__contenido">
+                <h2 class="registrar__heading">Asóciate con el líder en servicios de comida a domicilio de España</h2>
+                <p class="registrar__parrafo">Consigue más clientes, impulsa tus ventas y mejora los resultados de tus acciones de marketing.</p>   
+            </div>
+
+            <div class="registrar__formulario">
+                <h3 class="registrar__formname">Únete hoy</h3>
+
+                <form action="" class="registrar__buscar">
+
+                    <div class="registrar__campo">
+                        <label for="opcion" class="registrar__label">Tipo de negocio</label>
+                        <select id="opcion" name="opciones" class="registrar__select" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="opcion1">Tienda alimentación</option>
+                            <option value="opcion2">Restaurante</option>
+                        </select>
+                    </div>
+
+                    <div class="registrar__campo">
+                        <label for="negocio" class="registrar__label">Nombre de tu negocio</label>
+                        <input class="registrar__input" id="negocio" type="text" required>
+                    </div>
+
+                    <div class="registrar__campo">
+                        <label for="codigo" class="registrar__label">Código postal</label>
+                        <input class="registrar__input" id="codigo" type="number" required>
+                    </div>
+
+                    <div class="registrar__campo">
+                        <label for="telefono" class="registrar__label">Número de contacto</label>
+                        <input class="registrar__input" id="telefono" type="tel" required>
+                    </div>
+
+                    <div class="registrar__campo">
+                        <label for="mail" class="registrar__label">Correo electrónico</label>
+                        <input class="registrar__input" id="mail" type="email" required>
+                    </div>
+
+                    <input type="submit" value="Únete a Delivery's" class="registrar__submit">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="porque">
+        <div class="contenedor">
+            <h2 class="porque__heading">¿Por qué unirte a Delivery's?</h2>
+            <p class="porque__subheading">Nuestro objetivo es ayudarte con las últimas innovaciones, ayudándote a alcanzar el éxito con nuevas ideas.</p>
+    
+            <div class="porque__grid">
+                <div class="porque__card">
+                    <img class="porque__imagen" src="build/img/porque_order.png" alt="imagen porque">
+                    <h3 class="porque__headingcard">Consigue más pedidos</h3>
+                    <p class="porque__texto">A través de nuestras efectivas campañas de marketing daremos a conocer tu negocio y podrás llegar a los millones de nuevos clientes que visitan Delivery's.</p>
+                </div>
+    
+                <div class="porque__card">
+                    <img class="porque__imagen" src="build/img/porque_risk.png" alt="imagen porque">
+                    <h3 class="porque__headingcard">Únete con riesgo cero</h3>
+                    <p class="porque__texto">No hay cuota de entrada y operamos a comisión, por lo que solo obtendremos beneficios cuando tú también los tengas.</p>
+                </div>
+    
+                <div class="porque__card">
+                    <img class="porque__imagen" src="build/img/porque_personalized.png" alt="imagen porque">
+                    <h3 class="porque__headingcard">Hazlo a tu manera</h3>
+                    <p class="porque__texto">Existimos porque existen negocios como el tuyo. Ofrecemos la flexibilidad necesaria para que te beneficies de nuestros servicios con opciones de delivery y apoyo estratégico a tu medida.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__box">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Más información</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Enlace 1</a>
+                    <a href="#" class="footer__link">Enlace 2</a>
+                    <a href="#" class="footer__link">Enlace 3</a>
+                    <a href="#" class="footer__link">Enlace 4</a>
+                    <a href="#" class="footer__link">Enlace 5</a>
+                    <a href="#" class="footer__link">Enlace 6</a>
+                </nav>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Delivery's App. Todos los Derechos Reservados</p>
+    </footer>
+    
+</body>
+</html>

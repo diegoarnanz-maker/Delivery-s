@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.porque{
+    background-color: v.$grisClaro;
+    padding: 2rem; 
+    text-align: center;
+    padding: v.$separacion 0;
+
+    &__heading{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &__subheading{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(3, v.$separacion);
+        }
+    }
+    &__card {
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left; // Alineación a la izquierda para mejor legibilidad
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Centrar los elementos dentro de la tarjeta
+        transition-property: transform;
+        transition-duration: 0.3s;
+
+        &:hover{
+            -webkit-box-shadow:0px 0px 99px 12px rgba(85,251,154,0.9);
+            -moz-box-shadow: 0px 0px 99px 12px rgba(85,251,154,0.9);
+            box-shadow: 0px 0px 99px 12px rgba(85,251,154,0.9);
+
+            transform: scale(1.1);
+        }
+    }
+    &__imagen{
+        width: 15rem;
+        height: auto;
+    }
+    &__headingcard{
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+    &__texto{
+        text-align: center;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="shortcut icon" href="build/img/logo.png" type="image/x-icon">
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    
+    <header class="header contenedor">
+        <div class="header__logo" onclick="navigateTo('index.html')">
+            <p class="header__logo--texto">Delivery's</p>
+            <img src="build/img/logo.png" alt="logo delivery">
+        </div>
+
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesion</a>
+            <a href="#" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+
+    
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__box">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Más información</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Enlace 1</a>
+                    <a href="#" class="footer__link">Enlace 2</a>
+                    <a href="#" class="footer__link">Enlace 3</a>
+                    <a href="#" class="footer__link">Enlace 4</a>
+                    <a href="#" class="footer__link">Enlace 5</a>
+                    <a href="#" class="footer__link">Enlace 6</a>
+                </nav>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Delivery's App. Todos los Derechos Reservados</p>
+    </footer>
+    
+</body>
+</html>

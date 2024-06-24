@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="shortcut icon" href="build/img/logo.png" type="image/x-icon">
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    
+    <header class="header contenedor">
+        <div class="header__logo" onclick="navigateTo('index.html')">
+            <p class="header__logo--texto">Delivery's</p>
+            <img src="build/img/logo.png" alt="logo delivery">
+        </div>
+
+        <nav class="navegacion">
+            <a href="inicio.html" class="navegacion__link">Iniciar Sesion</a>
+            <a href="crearcuenta.html" class="navegacion__link">Crear Cuenta</a>
+            <a href="registrar.html" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Explora y Encarga comida en tu restaurante favorito</h2>
+                
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                       <label for="Restaurante" class="formulario__label">Restaurante</label>
+                       <input class="formulario__input" id="Restaurante" placeholder="Trattoria Italiana...">
+                    </div>
+
+                    <div class="formulario__campo">
+                        <label for="platos" class="formulario__label">Tipos de comida</label>
+                        <input class="formulario__input" id="platos" placeholder="Pizza, hamburguesa, ensalada...">
+                     </div>
+
+                     <input type="submit" value="Buscar" class="formulario__submit">
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/Take Away-cuate.svg" alt="imagen repartidor">
+            </div>
+        </div>
+    </section>
+
+    <section class="pasos">
+        <img src="build/img/wave.svg" alt="imagen wave" class="pasos__wave">
+    
+        <!-- Empieza el bloque de pasos -->
+        <div class="pasos__contenido">
+            <h2 class="pasos__heading">¿Cómo funciona? <span class="pasos__heading--descripcion">tan sencillo como 1, 2 y 3</span></h2>
+            <!-- Contenedor pasos -->
+            <div class="pasos__grid contenedor">
+                <div class="pasos__paso">
+                    <img src="build/img/paso-1.svg" alt="imagen paso uno">
+                    <h3 class="pasos__titulo">Selecciona Restaurante</h3>
+                </div>
+                <div class="pasos__paso">
+                    <img src="build/img/paso-2.svg" alt="imagen paso dos">
+                    <h3 class="pasos__titulo">Elige tu plato</h3>
+                </div>
+                <div class="pasos__paso">
+                    <img src="build/img/paso-3.svg" alt="imagen paso tres">
+                    <h3 class="pasos__titulo">Envio al instante</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor comentarios">
+        <h2 class="comentarios__heading">Comentarios</h2>
+
+        <div class="comentarios__grid">
+            <div class="comentario">
+                <header class="comentario__header">
+                    <div class="comentario__imagen">
+                        <img class="comentario__perfil" src="build/img/comentario.png" alt="comentario">
+                    </div>
+
+                    <div class="comentario__informacion">
+                        <p class="comentario__autor">Diego Arnanz Lozano</p>
+                        <img class="comentario__calificacion" src="build/img/estrellas.png" alt="estrellas">
+                    </div>
+                </header>
+
+                <blockquote class="comentario__texto">
+                    Lorem ipsum dolor sit amet consectetue. Quisquam voluptas dolor ab aperiam officiis accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur fugit recusandae molestiae. Maxime, minus? fugit recusandae molestiae. Maxime, minus? accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur fugit recusandae molestiae. Maxime, minus?
+                </blockquote>
+            </div> <!--FIN .comentario-->
+
+                <div class="comentario">
+                    <header class="comentario__header">
+                        <div class="comentario__imagen">
+                            <img class="comentario__perfil" src="build/img/comentario.png" alt="comentario">
+                        </div>
+    
+                        <div class="comentario__informacion">
+                            <p class="comentario__autor">Diego Arnanz Lozano</p>
+                            <img class="comentario__calificacion" src="build/img/estrellas.png" alt="estrellas">
+                        </div>
+                    </header>
+    
+                    <blockquote class="comentario__texto">
+                        Lorem ipsum dolor sit amet consectetue. corrupti consequuntur fugit recusandae molestiae. Maxime, minus?
+                    </blockquote>
+                </div> <!--FIN .comentario-->
+
+                    <div class="comentario">
+                        <header class="comentario__header">
+                            <div class="comentario__imagen">
+                                <img class="comentario__perfil" src="build/img/comentario.png" alt="comentario">
+                            </div>
+        
+                            <div class="comentario__informacion">
+                                <p class="comentario__autor">Diego Arnanz Lozano</p>
+                                <img class="comentario__calificacion" src="build/img/estrellas.png" alt="estrellas">
+                            </div>
+                        </header>
+        
+                        <blockquote class="comentario__texto">
+                            Lorem ipsum dolor sit amet consectetue. Quisquam voluptas dolor ab aperiam officiis accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur fugit recusandae molestiae. Maxime, minus?
+                        </blockquote>
+                    </div> <!--FIN .comentario-->
+
+                        <div class="comentario">
+                            <header class="comentario__header">
+                                <div class="comentario__imagen">
+                                    <img class="comentario__perfil" src="build/img/comentario.png" alt="comentario">
+                                </div>
+            
+                                <div class="comentario__informacion">
+                                    <p class="comentario__autor">Diego Arnanz Lozano</p>
+                                    <img class="comentario__calificacion" src="build/img/estrellas.png" alt="estrellas">
+                                </div>
+                            </header>
+            
+                            <blockquote class="comentario__texto">
+                                Lorem ipsum dolor sit amet consectetue. Quisquam voluptas dolor ab aperiam officiis accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur fugit recusandae molestiae. Maxime, minus?
+                            </blockquote>
+                        </div> <!--FIN .comentario-->
+
+                            <div class="comentario">
+                                <header class="comentario__header">
+                                    <div class="comentario__imagen">
+                                        <img class="comentario__perfil" src="build/img/comentario.png" alt="comentario">
+                                    </div>
+                
+                                    <div class="comentario__informacion">
+                                        <p class="comentario__autor">Diego Arnanz Lozano</p>
+                                        <img class="comentario__calificacion" src="build/img/estrellas.png" alt="estrellas">
+                                    </div>
+                                </header>
+                
+                                <blockquote class="comentario__texto">
+                                    Lorem ipsum dolor sit amet consectetue. Quisquam voluptas dolor ab aperiam officiis accusantium est cum praesentium obcaecati ducimus doloribus, corrupti consequuntur fugit recusandae molestiae. Maxime, minus?
+                                </blockquote>
+                            </div> <!--FIN .comentario-->
+        </div>
+    </section>
+
+    <main class="favoritos">
+        <h2 class="favoritos__heading">Restaurantes</h2>
+
+        <div class="favoritos__grid contenedor">
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <img src="build/img/logo_restaurante.png" alt="logo restaurante favorito">
+                    </div>
+
+                    <div class="favorito__contenido">
+                        <h3 class="favorito__nombre">Trattoria Italiana</h3>
+                        <img class="favorito__calificacion" src="build/img/estrellas.png" alt="calificacion restaurante">
+                        <p class="favorito__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat at soluta. Nostrum illum doloribus corrupti fuga sed harum ducimus mollitia quod molestiae odio quo, dignissimos quae neque deserunt iusto.</p>
+                    </div>
+                </div>
+            </div> <!--FIN favorito-->
+
+        </div>
+    </main>
+
+    <section class="repartidores">
+        <h2 class="repartidores__heading">Trabaja con Nosotros</h2>
+
+        <div class="repartidores__grid contenedor">
+            <div class="repartidores__imagen">
+                <img src="build/img/delivery.svg" alt="imagen repartidor">
+            </div>
+            <div class="repartidores__contenido">
+                <p class="repartidores__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, culpa dolore. Dignissimos doloribus nam dolores quidem quisquam iusto, voluptates obcaecati molestiae placeat! Nisi ratione vero quasi ducimus perferendis quod soluta?</p>
+                <p class="repartidores__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, culpa dolore. Dignissimos doloribus nam dolores quidem quisquam iusto, voluptates obcaecati molestiae placeat! Nisi ratione vero quasi ducimus perferendis quod soluta?</p>
+                <a href="#" class="repartidores__enlace">Más información</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="descargar">
+        <div class="descargar__grid contenedor">
+            <div class="descargar__imagen">
+                <img src="build/img/app.png" alt="imagen app">
+            </div>
+
+            <div class="tiendas">
+                <h3 class="tiendas__heading">Descarga la App!</h3>
+                <p class="tiendas__texto">Disponible para Android e IOS</p>
+                
+                <div class="tiendas__grid">
+                    <a href="#" class="tiendas__enlace">
+                        <img src="build/img/tienda-android.svg" alt="imagen tienda">
+                    </a>
+                    <a href="#" class="tiendas__enlace">
+                        <img src="build/img/tienda-apple.svg" alt="imagen tienda">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__box">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Más información</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Enlace 1</a>
+                    <a href="#" class="footer__link">Enlace 2</a>
+                    <a href="#" class="footer__link">Enlace 3</a>
+                    <a href="#" class="footer__link">Enlace 4</a>
+                    <a href="#" class="footer__link">Enlace 5</a>
+                    <a href="#" class="footer__link">Enlace 6</a>
+                </nav>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati earum impedit sequi eum officia corporis fuga consectetur. Maxime ex omnis quibusdam reiciendis provident sed maiores dolorum corporis sint veritatis.</p>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Delivery's App. Todos los Derechos Reservados</p>
+    </footer>
+    
+</body>
+</html>

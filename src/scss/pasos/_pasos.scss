@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pasos{
+    margin-top: 2rem;
+
+    &__contenido{
+        background-color: v.$primario;
+        margin-top: -1px; /*para borrar el pixel que se forma*/
+    }
+    &__heading{
+        text-align: center;
+
+        &--descripcion{
+            font-size: 1.8rem;
+            display: block;
+            color: v.$secundario;
+        }
+    }
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(3, v.$separacion);
+        }
+    }
+    &__paso{
+        border: 1px solid v.$blanco;
+        margin-bottom: 2rem;
+        transition: transform .3s;
+
+        &:hover{
+            -webkit-box-shadow:0px 0px 105px 45px rgba(255,255,255,0.9);
+            -moz-box-shadow: 0px 0px 105px 45px rgba(255,255,255,0.9);
+            box-shadow: 0px 0px 105px 45px rgba(255,255,255,0.9);
+            transform: scale(1.1);
+        }
+    }
+    &__titulo{
+        text-align: center;
+        font-size: 3rem;
+    }
+}

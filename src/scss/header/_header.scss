@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: v.$separacion 0;
+    align-items: center;
+    @include m.desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 10rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        cursor: pointer;
+        transition-property: transform;
+        transition-duration: .3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        @include m.desktop { 
+            margin-bottom: 0;
+        }
+
+        &--texto{
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: rgba(85,251,154,0.95) 0px 0px 8px;
+        }
+    }
+}
